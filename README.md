@@ -56,7 +56,7 @@ Exploratorio pre-liminar antes de cargar los datos a bigquery.
 
 Se observa, que hay campos con información intercambiada:
 
-![alt text](img/image.png)
+![alt text](https://github.com/osirisberbesia/Airbnb-Insights-LaboratoriaPJ/blob/2277dd699141a79059ea4f6e3b063b090fdb7fc1/Img/image.png)
 
 Estos datos, se dejarán por fuera del análisis.
 
@@ -68,13 +68,13 @@ Datos después de la pre-limpieza:
 | hosts | 37.484 | 37.362 | 0.33% |
 
 
-[Query de las limpiezas pre-procesamiento. ](/SQL/limpieza.sql)
+[Query de las limpiezas pre-procesamiento. ](SQL/limpieza.sql)
 
 
 ## Validación de nulos:
 
 La única tabla con nulos es reviews, con 10.016 nulos en cada uno de los siguientes campos: reviews_per_month y last_review.
-[Puede ver la query acá.](/SQL/nulos.sql)
+[Puede ver la query acá.](SQL/nulos.sql)
 Se entiende que si una room no ha sido calificada, no tendrá estos datos con valores
 
 ## Validación de duplicados
@@ -82,7 +82,7 @@ Se entiende que si una room no ha sido calificada, no tendrá estos datos con va
 En las tablas de dimensiones, solo se validan los respectivos ID para la exploración de sus duplicados, las cuales no contienen duplicados
 En la tabla de hechos reviews, los host_id si tienen duplicados, contando 5.116 duplicados de 1 a más veces.
 
-[Puede ver la query acá.](/SQL/duplicados.sql)
+[Puede ver la query acá.](SQL/duplicados.sql)
 
 
 ## Discrepancias
