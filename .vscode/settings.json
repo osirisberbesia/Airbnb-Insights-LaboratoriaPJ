@@ -1,0 +1,14 @@
+{
+    "sqltools.connections": [
+        {
+            "name": "BigQuery",
+            "authenticator": "SERVICE_ACCOUNT",
+            "location": "us",
+            "previewLimit": 50,
+            "driver": "BigQuery",
+            "keyfile": "C:\\Users\\Oberb\\OneDrive\\Documentos\\Laboratoria\\airbnb-pj6-74ca3bc4eb67.json",
+            "projectId": "airbnb-pj6",
+            "token": "ya29.a0AcM612yrIQlt3KT_PcEW7jiqpfuXDY15aQ6W9bZwQfyi4MdQLkI3sy0ord6q1TdzfVQry3b5_qOkwUoRDaUNXxe9oa0ZI8g-A96D6QCkjnll9D2KNfHldXm31dcuOZOM818Z3Jr-8fU1LRlFfqhC118n3VuvRCLyjyIIU6LvaCgYKAaASARISFQHGX2Mi2LB2cRnxTDiwRv3pILSf1g0175"
+        }
+    ]
+}
