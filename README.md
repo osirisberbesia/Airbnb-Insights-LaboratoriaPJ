@@ -1,3 +1,5 @@
+![alt text](Img/portada.png)
+
 # Airbnb-Insights-LaboratoriaPJ
 Proyecto de Business Intelligence aplicado a Airbnb. Analiza datos de interacciones anfitrión-huésped para optimizar disponibilidad, maximizar ingresos y mejorar experiencias. Utiliza técnicas avanzadas de BI para visualizar tendencias, identificar patrones y fundamentar decisiones estratégicas.
 
@@ -29,7 +31,8 @@ Exploratorio pre-liminar antes de cargar los datos a bigquery.
   * University Heights - Es un área en el Bronx, pero se puede considerar una región más que un barrio tradicional.
   * Theater District - Se refiere a una área en Manhattan conocida por sus teatros, pero no es un barrio en el sentido tradicional.
   * Financial District - Es un área de Manhattan conocida por sus centros financieros, no un barrio. 
-    Estos datos se dejarán tan cual como está en el dataset
+
+      Estos datos se dejarán tan cual como está en el dataset
 
  * neighbourhood_group: existen datos anómalos correspondientes a las coordenadas, se decide excluir estos del estudio.
  * latitude: existen valores no numéricos (154) correspondientes a room_type
@@ -61,6 +64,8 @@ Se observa, que hay campos con información intercambiada:
 Estos datos, se dejarán por fuera del análisis.
 
 Datos después de la pre-limpieza:
+
+
 | Tabla | Cantidad de datos originales | Datos después de pre-limpieza | % datos excluidos |
 |---------|------------------------------|------------------------------|-------------------|
 | reviews | 48.875 |  48.710 | 0.34% |
@@ -89,5 +94,76 @@ En la tabla de hechos reviews, los host_id si tienen duplicados, contando 5.116 
 
 Fueron identificadas en la pre-limpieza y explicadas a detalles al inicio del documento.
 
+## Cambio de tipos de datos en Power BI
+
+* Latitude y longitud, se asignaron cada una a latitud y longitud y no solo como valores numéricos
+* Price, de numérico a moneda
+
+
+## Nuevas variables
+
+### Tabla reviews
+
+* total_incoming: calcula el total que puede generar una habitación en función del precio y número de días disponibles en un año.
+
+* tipo_anfitrion:
+
+  * 1-10 listados: "Novato"
+  * 11-30 listados: "Desarrollo"
+  * 31-50 listados: "Emergente"
+  * 51-80 listados: "Establecido"
+  * 81-100 listados: "Referente"
+  * 101+ listados: "Líder del Sector"
+
+### Tabla rooms
+
+* noches_minimas_categorica: según la cantidad de días de noches mínimas que permite reservar se generaron las siguientes categorías
+   * 1-14 días: Estadía corta
+   * 15-30 días: Estadía media
+   * 30-90 días: Estadía larga
+   * 91-180 días: Estadía prolongada
+   * 181-365 días: Estadía extendida
+   * +366 días: Residencia a largo plazo
+
+
+## Columnas a partir de formulas DAX
+
+  * total_huespedes_barrio: número total de huéspedes que un barrio podría recibir en un año.
+
+```
+EVALUATE
+VAR dias_year = 365
+RETURN
+SUMMARIZE(
+    'rooms-pre-charge',
+    'rooms-pre-charge'[neighbourhood_group],
+    "Total_Guests_Per_Year",
+    SUMX(
+        'rooms-pre-charge',
+        DIVIDE(dias_year, 'rooms-pre-charge'[minimum_nights], 0)
+    )
+)
+```
+
+
+  * perc_rooms_barrio: porcentaje de habitaciones disponibles por barrio.
+
+  ```
+EVALUATE
+SUMMARIZECOLUMNS(
+    'rooms-pre-charge'[neighbourhood_group],
+    "Porcentaje de Habitaciones Disponibles",
+    DIVIDE(
+        SUM('reviews-pre-charge'[availability_365]),
+        COUNTROWS('rooms-pre-charge') * 365,
+        0
+    ) * 100
+)
+  ```
+
+
+ ## Visualización de variable categóricas
+
+![alt text](Img/image2.png)
 
 
