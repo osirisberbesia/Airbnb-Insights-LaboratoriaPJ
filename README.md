@@ -167,3 +167,21 @@ SUMMARIZECOLUMNS(
 ![alt text](Img/image2.png)
 
 
+## Visualización  de los datos a lo largo del tiempo
+
+![alt text](image.png)
+![alt text](image-1.png)
+
+## Puntos en el mapa de las propiedades listadas
+
+![alt text](image-2.png)
+
+## Distribución de ingresos por zona y tipo de habitación
+
+
+![alt text](image-3.png)
+
+![alt text](image-4.png)
+
+## Recomendaciones y conclusiones
+
