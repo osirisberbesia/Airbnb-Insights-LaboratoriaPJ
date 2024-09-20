@@ -207,5 +207,9 @@ SUMMARIZECOLUMNS(
 ## Enlaces de interés:
 
 * Presentación
-* Dashboard
+* Video Loom
 
+--------------------------
+# Imagen del [dashboard](https://github.com/osirisberbesia/Airbnb-Insights-LaboratoriaPJ/blob/main/dashboard-airbnb.pbix)
+
+![alt text](Img/dash.png)
