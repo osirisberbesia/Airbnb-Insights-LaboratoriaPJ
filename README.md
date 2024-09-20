@@ -169,19 +169,43 @@ SUMMARIZECOLUMNS(
 
 ## Visualización  de los datos a lo largo del tiempo
 
-![alt text](image.png)
-![alt text](image-1.png)
+![alt text](Img/image-6.png)
+![alt text](Img/image-1.png)
 
 ## Puntos en el mapa de las propiedades listadas
 
-![alt text](image-2.png)
+![alt text](Img/image-2.png)
 
 ## Distribución de ingresos por zona y tipo de habitación
 
 
-![alt text](image-3.png)
+![alt text](Img/image-3.png)
 
-![alt text](image-4.png)
+![alt text](Img/image-4.png)
+
+## Promedio de noches mínimas por barrio según tipo de hosts
+
+![alt text](Img/image-5.png)
 
 ## Recomendaciones y conclusiones
+
+### Conclusiones
+
+1. Las propiedades están distribuidas principalmente en áreas céntricas o turísticas, lo que influye positivamente en los ingresos.
+2. Los apartamentos completos generan más ingresos que las habitaciones privadas o compartidas.
+3. Las estancias cortas tienden a generar más ingresos por noche, mientras que las largas aseguran una ocupación estable.
+4. Manhattan es el barrio con mayor ingresos de la zona.
+5. Los hosts novatos son los que representan la mayor cantidad de ingresos en comparación con líderes del sector
+
+### Recomendaciones
+
+1. Ofrecer descuentos para estancias prolongadas durante temporadas bajas para mantener una ocupación continua.
+2. Considerar la oferta de distintos tipos de alojamiento, como habitaciones privadas, para atraer diferentes segmentos de mercado.
+3. Disminuir la cantidad de noches mínimas requeridas para hospedaje y aumentar así el atractivo de reservaciones, ya que el mínimo promedio de noches para reservar se recomienda sea 1, e inicia en 4 hasta casi 9 noches.
+4. Aumentar la disponibilidad anual de las rooms, ya que de nuestras 48.710 habitaciones, solo el 2.73% (1.284 rooms) tienen disponibilidad durante los 365 días del año.
+
+## Enlaces de interés:
+
+* Presentación
+* Dashboard
 
