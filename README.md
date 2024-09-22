@@ -193,7 +193,7 @@ SUMMARIZECOLUMNS(
 
 1. Las propiedades están distribuidas principalmente en áreas céntricas o turísticas, lo que influye positivamente en los ingresos.
 2. Los apartamentos completos generan más ingresos que las habitaciones privadas o compartidas.
-3. Las estancias cortas tienden a generar más ingresos por noche, mientras que las largas aseguran una ocupación estable.
+3. Las estancias cortas tienen conquistado completamente el mercado, mientras que las largas aseguran una ocupación estable pero con mínima demanda.
 4. Manhattan es el barrio con mayor ingresos de la zona.
 5. Los hosts novatos son los que representan la mayor cantidad de ingresos en comparación con líderes del sector
 
@@ -206,8 +206,8 @@ SUMMARIZECOLUMNS(
 
 ## Enlaces de interés:
 
-* Presentación
-* Video Loom
+* [Presentación](https://docs.google.com/presentation/d/1KRGexRGgtAMjXQOxSch2y6QnQ0NJpU71CPJofxNK7Bk/edit?usp=sharing)
+* [Video Loom](https://www.loom.com/share/a8566c2edd954af3aa47d1505f2ba75d)
 
 --------------------------
 # Imagen del [dashboard](https://github.com/osirisberbesia/Airbnb-Insights-LaboratoriaPJ/blob/main/dashboard-airbnb.pbix)
